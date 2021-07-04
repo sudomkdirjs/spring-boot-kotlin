@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController
 class HelloWorldController {
 
     @GetMapping
-    fun helloWorld(): String = "Hello, This is REST endpoint!"
+    fun helloWorld(): String = "Hello, This is a REST endpoint!"
 }
