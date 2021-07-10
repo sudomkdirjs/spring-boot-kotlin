@@ -14,7 +14,7 @@ class MareesApplicationTests {
 	fun `should provide a collection of banks`() {
 
 		// when
-		val banks = mockDataSource.retrieveBanks()
+		val banks = mockDataSource.fetchBanks()
 
 		//Then
 		assertThat(banks.size).isGreaterThanOrEqualTo(3)
@@ -24,7 +24,7 @@ class MareesApplicationTests {
 	fun `should provide some mock data`() {
 
 		// when
-		val banks = mockDataSource.retrieveBanks()
+		val banks = mockDataSource.fetchBanks()
 
 		//Then
 		assertThat(banks).allMatch { it.accountNumber.isNotBlank() }

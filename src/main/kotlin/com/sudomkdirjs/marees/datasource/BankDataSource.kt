@@ -4,5 +4,5 @@ import com.sudomkdirjs.marees.model.Bank
 
 interface BankDataSource {
 
-    fun retrieveBanks(): Collection<Bank>
+    fun fetchBanks(): Collection<Bank>
 }
